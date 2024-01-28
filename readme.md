@@ -16,19 +16,16 @@ This script is designed to streamline customization of [GoPhish](https://github.
 ## Disclaimer
 This script is provided for educational purposes only. Use it at your own risk. The creator of this script is not responsible for any misuse or damage caused by this script.
 
-## Credit
-### References:
-- Based on Nicholas Anastasi's blog post: [Never Had a Bad Day Phishing - How to Set Up GoPhish to Evade Security Controls](https://www.sprocketsecurity.com/resources/never-had-a-bad-day-phishing-how-to-set-up-gophish-to-evade-security-controls)
-- Custom 404 Page setup taken from Michael Eder's GitHub repository: [edermi/gophish_mods](https://github.com/edermi/gophish_mods/blob/master/controllers/phish.go)
-
 ## Usage
-**The script must be run from its own directory before building GoPhish binary**. To use the script, first make it executable:
+**The script must be run from its own directory before building GoPhish binary, DO NOT place script folder inside `gophish` folder**. To use the script, first make it executable:
 
 ```bash
 chmod +x ./patch.sh
+```
 
 Then run the script with the required options:
 
+```bash
 ./patch.sh --path ../gophish --x-contact-header "X-New-Contact" --x-signature-header "X-New-Signature" --server-name "NewServerName" --recipient-parameter "newParam" --rid-length 12
 
 Options
@@ -41,3 +38,8 @@ Options
 ```
 
 **NOTE**: You can delete the `gophish` binary. To modify values again, simply use the same script. It tracks the latest values used, allowing you to customize your `GoPhish` instance multiple times as needed.
+
+## Credit
+### References:
+- Based on Nicholas Anastasi's blog post: [Never Had a Bad Day Phishing - How to Set Up GoPhish to Evade Security Controls](https://www.sprocketsecurity.com/resources/never-had-a-bad-day-phishing-how-to-set-up-gophish-to-evade-security-controls)
+- Custom 404 Page setup taken from Michael Eder's GitHub repository: [edermi/gophish_mods](https://github.com/edermi/gophish_mods/blob/master/controllers/phish.go)
