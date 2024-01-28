@@ -17,7 +17,7 @@ This script is designed to streamline customization of [GoPhish](https://github.
 This script is provided for educational purposes only. Use it at your own risk. The creator of this script is not responsible for any misuse or damage caused by this script.
 
 ## Usage
-**The script must be run from its own directory before building GoPhish binary, DO NOT place script folder inside `gophish` folder**. To use the script, first make it executable:
+The script **must** be run from its own directory **before** building GoPhish binary, **DO NOT** place script folder inside `gophish` directory. To use the script, first make it executable:
 
 ```bash
 chmod +x ./patch.sh
