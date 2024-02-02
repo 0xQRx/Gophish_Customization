@@ -26,8 +26,7 @@
 # chmod +x ./patch.sh
 #
 # Usage Example:
-# ./patch.sh --path ../gophish --x-contact-header "X-New-Contact" --x-signature-header "X-New-Signature"
-#             --server-name "NewServerName" --recipient-parameter "newParam" --rid-length 12
+# ./patch.sh --path ../gophish --x-contact-header "X-New-Contact" --x-signature-header "X-New-Signature" --server-name "IGNORE" --recipient-parameter "newParam" --rid-length 12
 #
 # Options:
 # --path: Path to the GoPhish installation directory.
